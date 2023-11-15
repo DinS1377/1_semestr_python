@@ -3,15 +3,15 @@
 
 
 
-# Exception Handling
+# обработка исключений
 while True:
     try:
-        a = float(input("input number"))
+        a = float(input("введите число"))
         if a <= 0:
-            print("exponent must be more than zero")
+            print("число должно быть больше нуля")
             continue
     except ValueError:
-        print("something went wrong")
+        print("что-то пошло не так")
         continue
     break
 
