@@ -29,5 +29,3 @@ elif x == 0:
 else:
     print("3")
 
-
-
