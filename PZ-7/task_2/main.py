@@ -5,11 +5,11 @@ from string import punctuation
 
 
 Str = "Завари мне, пожалуйста, чай. Немедленно отойди от дороги!"
-new_Str = ''
+number = 0
 
 for i in Str:
-    if i not in punctuation:
-        new_Str = new_Str + i
+    if i in punctuation:
+        number = number + 1
 
 
-print(new_Str)
+print(number)

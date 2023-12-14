@@ -17,8 +17,8 @@ for i in qwerty:
     elif i in rus_alphabet:
         rus = rus + 1
 
-print(f'латинские: {lat}')
-print(f'русские: {rus}')
+
+print(f"общее число букв: {lat+rus}")
 
 
 
