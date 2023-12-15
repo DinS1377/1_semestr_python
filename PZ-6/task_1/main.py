@@ -1,10 +1,19 @@
-nmb = ["0", "1", '2', '3', '4', '5', '6', '7', '8']
+#Дан список A размера N. Вывести его элементы в следующем порядке: A1, AN, A2,
+#AN-1, A3, AN-2, ….
 
-def aa(nmb):
-    nmb_2 = []
-    for i in range(0, len(nmb)-1):
-        nmb_2.append(nmb(i))
-    return nmb_2
 
-print(aa(nmb))
+A = [1, 2, 3, 4, 5]
+
+n = len(A)
+result = []
+for i in range(n // 2):
+    result.append(A[i])
+    result.append(A[n - i - 1])
+if n % 2 != 0:
+    result.append(A[n // 2])
+
+print(result)
+
+
+
 
