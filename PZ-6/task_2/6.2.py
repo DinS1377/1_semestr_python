@@ -6,9 +6,12 @@ lst = [1,1,2,3,4,5,6,6,7,8,9,10,11]
 lst.sort()
 
 a = 1
-for i in range(1, len(lst)):
-    if lst[i] != lst[i - 1]:
-        a += 1
+try:
+    for i in range(1, len(lst)):
+        if lst[i] != lst[i - 1]:
+            a += 1
+except:
+    print("something went wrong")
 
 
 print(a)
