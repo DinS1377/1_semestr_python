@@ -13,7 +13,3 @@ if n % 2 != 0:
     result.append(A[n // 2])
 
 print(result)
-
-
-
-
