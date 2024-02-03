@@ -1,3 +1,12 @@
+"""
+ Туристические агентства предлагают следующие туры. Вояж – Мексика,Канада,Израиль,
+ Италия,США. РейнаТур – Англия,Япония,Канада,ЮАР. Радуга – США,Испания,Швеция,
+ Австралия. .Определить:
+ 1 в каких турагенствах можно одновременно приобрести туры в Италию и Канаду.
+ 2 в турагенство РейнаТур добавить тур в Индию.
+ 3 полный список всех туров.
+"""
+
 c = 0
 
 voyage = {'mexico', 'canada', 'israel', 'italy', 'usa'}
@@ -6,12 +15,11 @@ rainbow = {'usa', 'spain', 'scotland', 'australia', 'italy', 'canada'}
 
 a = {'italy', 'canada'}
 tours = [voyage, reyna_tour, rainbow]
-tours_names= ['voyage', 'reyna_tour', 'rainbow']
+tours_names = ['voyage', 'reyna_tour', 'rainbow']
 
 # в каких турагенствах туры в италию и канаду
-for i in tours:
-    b = i & a
-    if b == a:
+for tour in tours:
+    if a & tour == a:
         print(f'В туре {tours_names[c]}')
     c = +1
 
