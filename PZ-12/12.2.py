@@ -8,7 +8,6 @@ def letters_only(text):
         if char.isalpha():
             yield char
 
-
 print('строка без цифр:', ''.join([i for i in letters_only(text)]))
 
 
